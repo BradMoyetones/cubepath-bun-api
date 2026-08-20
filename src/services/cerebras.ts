@@ -2,7 +2,7 @@ import { env } from "../config/env";
 import type { ChatMessage, ProviderStreamChunk } from "./openrouter";
 
 const CEREBRAS_BASE_URL = "https://api.cerebras.ai/v1/chat/completions";
-const CEREBRAS_DEFAULT_MODEL = "llama3.1-8b";
+const CEREBRAS_DEFAULT_MODEL = "gpt-oss-120b";
 
 function maskApiKey(apiKey: string): string {
   return apiKey.length > 10 ? `${apiKey.slice(0, 6)}...${apiKey.slice(-4)}` : "***";
